@@ -1,0 +1,48 @@
+.about__repute {
+  display: flex;
+  padding-top: 30px;
+  &__block {
+    padding-bottom: 30px;
+    border-bottom: 2px solid $silverChalice;
+    margin-right: 38px;
+    width: 246px;
+    &__title {
+      font-weight: 600;
+      line-height: 34.5px;
+      margin-bottom: 20px;
+    }
+  }
+  &__requisites {
+    margin-top: 50px;
+  }
+  &-open {
+    display: flex;
+    color: $mineShaft;
+    align-items: center;
+    transition: all .6s ease;
+    &-text {
+      transition: all .6s ease;
+    }
+    &:hover svg {
+      fill: $allports;
+    }
+    &:hover p {
+      color: $allports;
+    }
+    &__icon {
+      width: 16px;
+      height: 24px;
+      fill: $silverChalice;
+      margin-right: 11px;
+      transition: all .6s ease;
+    }
+  }
+  &__description {
+    background-color: $allports;
+    color: $white;
+    padding: 99px 63px 99px 98px;
+    font-size: 23px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}

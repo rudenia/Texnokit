@@ -1,0 +1,47 @@
+.header__contacts {
+  display: flex;
+  background-color: $mineShaft;
+  padding: 12px 0  16px;
+  &__wrapper {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    & > * {
+      margin-right: 30px;
+      &:last-child { margin-right: 0; }
+    }
+  }
+  &__tel {
+    & > * {
+      margin-right: 30px;
+      &:last-child { margin-right: 0; }
+    }
+    &__link {
+      color: $white;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+  &__language {
+    color: $white;
+    & > * {
+      margin-right: 10px;
+      &:last-child { margin-right: 0; }
+    }
+    &:hover {
+      color: $white;
+    }
+  }
+  &__social {
+    display: flex;
+    & > * {
+      margin-right: 20px;
+      &:last-child { margin-right: 0; }
+    }
+    &__icon {
+      fill: $silver;
+      @include size(24px);
+    }
+  }
+}
