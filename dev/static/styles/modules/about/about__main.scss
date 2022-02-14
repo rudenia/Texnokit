@@ -41,33 +41,33 @@
       &-description {
         font-size: 19px;
         line-height: 28.5px;
-        &-open {
-          margin-top: 11px;
-          display: flex;
-          color: $mineShaft;
-          align-items: center;
-          transition: all .6s ease;
-          &-text {
-            transition: all .6s ease;
-          }
-          &:hover svg {
-            fill: $allports;
-          }
-          &:hover p {
-            color: $allports;
-          }
-        }
-        &__icon {
-          width: 16px;
-          height: 24px;
-          fill: $silverChalice;
-          margin-right: 11px;
-          transition: all .6s ease;
-        }
       }
       &-more {
         flex-direction: column;
       }
+    }
+  }
+  &-open {
+    margin-top: 11px;
+    display: flex;
+    color: $mineShaft;
+    align-items: center;
+    transition: all .6s ease;
+    &-text {
+      transition: all .6s ease;
+    }
+    &:hover svg {
+      fill: $allports;
+    }
+    &:hover p {
+      color: $allports;
+    }
+    &__icon {
+      width: 16px;
+      height: 24px;
+      fill: $silverChalice;
+      margin-right: 11px;
+      transition: all .6s ease;
     }
   }
 }
