@@ -1,2 +1,2 @@
-let a = 6;
-let b = 9;
+// Accordion for section About //
+document

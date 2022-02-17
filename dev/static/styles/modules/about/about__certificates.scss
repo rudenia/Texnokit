@@ -1,0 +1,17 @@
+.about__content {
+  padding-top: 20px;
+  display: none;
+  &-active {
+    display: block;
+  }
+  &__certificates {
+    display: flex;
+    & > * {
+      margin-right: 30px;
+      width: 65px;
+      height: 92px;
+      cursor: pointer;
+      &:last-child { margin-right: 0; }
+    }
+  }
+}

@@ -16,26 +16,7 @@
     margin-top: 50px;
   }
   &-open {
-    display: flex;
-    color: $mineShaft;
-    align-items: center;
-    transition: all .6s ease;
-    &-text {
-      transition: all .6s ease;
-    }
-    &:hover svg {
-      fill: $allports;
-    }
-    &:hover p {
-      color: $allports;
-    }
-    &__icon {
-      width: 16px;
-      height: 24px;
-      fill: $silverChalice;
-      margin-right: 11px;
-      transition: all .6s ease;
-    }
+    margin-top: 0;
   }
   &__description {
     background-color: $allports;
