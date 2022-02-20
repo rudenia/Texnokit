@@ -1,8 +1,11 @@
 .about__content {
   padding-top: 20px;
   display: none;
-  &-active {
+  &-active & {
     display: block;
+  }
+  &-active + #about__repute__description {
+    display: none;
   }
   &__certificates {
     display: flex;
