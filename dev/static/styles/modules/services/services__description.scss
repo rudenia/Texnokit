@@ -1,0 +1,66 @@
+.services__description {
+  &-open {
+    border-top: 2px solid $silverChalice;
+    padding: 20px 0;
+  }
+  &-open {
+    display: flex;
+    align-items: center;
+  }
+  &-icon {
+    cursor: pointer;
+    background: $allports;
+    height: 16px;
+    width: 2px;
+    position: relative;
+    left: 33px;
+    transition: all .3s ease;
+    &:after {
+      content: "";
+      cursor: pointer;
+      background: $allports;
+      height: 2px;
+      width: 16px;
+      position: absolute;
+      top: 6px;
+      left: -7px;
+      transition: all .3s ease;
+    }
+  }
+  &-title {
+    margin-left: 95px;
+  }
+  &-content {
+    margin-left: 95px;
+    display: none;
+    &-text {
+      margin-bottom: 20px;
+      line-height: 120%;
+    }
+    &-active & {
+      display: block;
+    }
+    &-active .services__description-icon {
+      height: 0;
+      width: 2px;
+      position: relative;
+      left: 33px;
+      &:after {
+        content: "";
+        top: 1px;
+        left: -7px;
+      }
+    }
+  }
+  &-item {
+    &-list {
+      max-width: 825px;
+      width: 825px;
+    }
+  }
+  &-list {
+    list-style: disc;
+    margin-bottom: 40px;
+  }
+}
+

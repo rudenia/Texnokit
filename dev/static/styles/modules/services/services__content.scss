@@ -1,0 +1,29 @@
+.services__content {
+  max-width: 825px;
+  margin-left: auto;
+  display: none;
+  &-text {
+    margin-bottom: 10px;
+    line-height: 19.2px;
+  }
+  &-active & {
+    display: block;
+  }
+  &__list {
+    margin-bottom: 10px;
+    line-height: 19.2px;
+    &-item  {
+      &:before {
+        content: "\2022";
+        color: $mineShaft;
+        display: inline-block;
+        width: 20px;
+      }
+    }
+  }
+  &-title {
+    line-height: 19.2px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+}

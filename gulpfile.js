@@ -66,7 +66,9 @@ function copyJquery() {
 }
 
 function vendors() {
-    return gulp.src(['node_modules/svg4everybody/dist/svg4everybody.min.js']) // через массив добавляем новые библиотеки js
+    return gulp.src(
+        ['node_modules/svg4everybody/dist/svg4everybody.min.js'],
+        ['https://www.npmjs.com/package/magnific-popup']) // через массив добавляем новые библиотеки js
         .pipe(gulpConcat('libs.js'))
         .pipe(gulp.dest('dist/static/js/vendors/'));
 }

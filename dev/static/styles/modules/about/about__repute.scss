@@ -25,5 +25,13 @@
     font-size: 23px;
     font-weight: 600;
     text-transform: uppercase;
+    transition: all .6s ease;
+
+  }
+  &__change {
+    width: 350px;
+    height: 246px;
+    margin-left: auto;
+    padding: 24px 13px 12px 53px;
   }
 }

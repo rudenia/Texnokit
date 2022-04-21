@@ -1,0 +1,20 @@
+.services {
+  padding: 56px 0 49px;
+  &__main {
+    &-title {
+      margin-bottom: 40px;
+    }
+  }
+  &__list {
+    &-title {
+      line-height: 34.5px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      color: $allports;
+      font-weight: 600;
+    }
+    &-open {
+      display: flex;
+    }
+  }
+}
