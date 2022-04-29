@@ -1,0 +1,28 @@
+.clients {
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    &-title {
+      min-width: 0;
+      width: 180px;
+    }
+  }
+  &__slide {
+    min-width: 0;
+    max-width: 825px;
+    position: relative;
+    & .slick-arrow {
+      position: absolute;
+      cursor: pointer;
+      bottom: -3%;
+      font-size: 0;
+      width: 31px;
+      height: 16px;
+      border: 0;
+    }
+    &-img {
+      margin-bottom: 30px;
+    }
+  }
+}
+

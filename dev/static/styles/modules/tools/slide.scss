@@ -1,0 +1,23 @@
+.slick {
+  &-track{
+    display: flex;
+    & > * {
+      margin-right: 30px;
+      &:last-child { margin-right: 0; }
+    }
+  }
+  &-list {
+    overflow: hidden;
+  }
+  &-prev {
+    left: 0;
+    background: url("../../../static/images/sprite/arrow-prev.svg") 0 0 / 100% no-repeat;
+  }
+  &-next {
+    right: 0;
+    background: url("../../../static/images/sprite/arrow-next.svg") 0 0 / 100% no-repeat;
+  }
+  &-disabled {
+    display: none !important;
+  }
+}

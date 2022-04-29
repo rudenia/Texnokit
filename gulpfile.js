@@ -61,14 +61,14 @@ function script() {
 
 function copyJquery() {
     return gulp.src('dev/static/js/vendors/jquery-3.6.0.min.js')
-        .pipe(gulpConcat('libs.js'))
+        //.pipe(gulpConcat('libs.js'))
         .pipe(gulp.dest('dist/static/js/vendors/'));
 }
 
 function vendors() {
-    return gulp.src(
-        ['node_modules/svg4everybody/dist/svg4everybody.min.js'],
-        ['https://www.npmjs.com/package/magnific-popup']) // через массив добавляем новые библиотеки js
+    return gulp.src([
+            'node_modules/svg4everybody/dist/svg4everybody.min.js',
+            'node_modules/slick-carousel/slick/slick.min.js']) // через запятую добавляем новые библиотеки js
         .pipe(gulpConcat('libs.js'))
         .pipe(gulp.dest('dist/static/js/vendors/'));
 }
@@ -139,7 +139,7 @@ function watch() {
     gulp.watch("dist/*.html").on('change', browserSync.reload);
 }
 
-const dev = gulp.parallel(fonts, pug2html, scss2css, imageMin, svgSpriteBuild, script, vendors)
+const dev = gulp.parallel(fonts, pug2html, scss2css, imageMin, svgSpriteBuild, copyJquery, script, vendors)
 
 exports.default = gulp.series(clean, dev, watch);
 exports.build = gulp.series(clean, setMode(true), dev);
