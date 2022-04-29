@@ -58,10 +58,23 @@ requis.addEventListener('click', function () {
     block.classList.toggle('about__repute__change');
 });
 
-// Slide for partner
+// Slide for clients
 
 $(document).ready(function (){
     $('.clients__slide').slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        speed: 1000,
+        infinite: false, //нужно?
+        rows: 2,
+        variableWidth: true,
+    })
+})
+
+// Slide for partners
+
+$(document).ready(function (){
+    $('.partners__slide').slick({
         slidesToShow: 3,
         slidesToScroll: 3,
         speed: 1000,
