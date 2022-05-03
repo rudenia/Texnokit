@@ -1,0 +1,37 @@
+.tenders {
+  padding: 43px 0 72px;
+  &__main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__info {
+    display: flex;
+    & > * {
+      margin-right: 30px;
+      &:last-child { margin-right: 0; }
+    }
+    &-about {
+      background-color: $allports;
+      color: $white;
+      font-size: 23px;
+      font-weight: 600;
+      text-transform: uppercase;
+      max-width: 350px;
+      padding: 55px;
+      & > * {
+        font-weight: 900;
+        &:first-child { font-weight: 600; }
+      }
+    }
+    &-presentation {
+      max-width: 445px;
+      & > * {
+        margin-bottom: 30px;
+        line-height: 19px;
+        &:last-child {
+          margin-bottom: 0; }
+      }
+    }
+  }
+}
