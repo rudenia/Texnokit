@@ -67,6 +67,7 @@ function copyJquery() {
 
 function vendors() {
     return gulp.src([
+            'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
             'node_modules/svg4everybody/dist/svg4everybody.min.js',
             'node_modules/slick-carousel/slick/slick.min.js']) // через запятую добавляем новые библиотеки js
         .pipe(gulpConcat('libs.js'))
