@@ -6,11 +6,46 @@ html(lang="ru-RU")
     head
         meta(charset="utf-8")
         title #{title}
+        meta(name="description" content="ТОВ \"К-ИТ\" — это команда профессионалов с многолетним стажем работы в индустрии IT. С 2010 года мы создаем высокотехнологичные решения в любых отраслях бизнеса.")
+        meta(name="keywords" content="Техно Кит,IT ОБСЛУЖИВАНИЕ,ТЕНДЕРЫ,ВИДЕОНАБЛЮДЕНИЕ,НАСТРОЙКА СЕРВЕРОВ,МОНТАЖ")
         <!--[if IE]>
         meta(http-equiv='X-UA-Compatible', content="IE = edge")
         <![endif]-->
         meta(name="viewport" content="width=device-width,initial-scale=1")
-        meta(name="keywords" content="")
+        <!-- Favicon for browsers-->
+        link(rel="shortcut icon" type='image/x-icon' href="static/images/favicon/favicon.ico")
+        link(rel="icon" type='image/png' sizes="16x16" href="static/images/favicon/favicon-16_16.png")
+        link(rel="icon" type='image/png' sizes="32x32" href="static/images/favicon/favicon-32_32.png")
+        link(rel="icon" type='image/png' sizes="96x96" href="static/images/favicon/favicon-96_96.png")
+        link(rel="icon" type='image/png' sizes="120x120" href="static/images/favicon/favicon-120_120.png")
+        <!-- iOS Safari -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png.png">
+        link(rel="apple-touch-icon" type='image/png' sizes="57x57" href="static/images/favicon/apple-icon-57_57.png")
+        link(rel="apple-touch-icon" type='image/png' sizes="60x60" href="static/images/favicon/apple-icon-60_60.png")
+        link(rel="apple-touch-icon" type='image/png' sizes="72x72" href="static/images/favicon/apple-icon-72_72.png")
+        link(rel="apple-touch-icon" type='image/png' sizes="76x76" href="static/images/favicon/apple-icon-76_76.png")
+        link(rel="apple-touch-icon" type='image/png' sizes="114x114" href="static/images/favicon/apple-icon-114_114.png")
+        link(rel="apple-touch-icon" type='image/png' sizes="120x120" href="static/images/favicon/apple-icon-120_120.png")
+        link(rel="apple-touch-icon" type='image/png' sizes="144x144" href="static/images/favicon/apple-icon-144_144.png")
+        link(rel="apple-touch-icon" type='image/png' sizes="152x152" href="static/images/favicon/apple-icon-152_152.png")
+        link(rel="apple-touch-icon" type='image/png' sizes="180x180" href="static/images/favicon/apple-icon-180_180.png")
+        <!-- Android -->
+        link(rel="manifest" href="static/images/favicon/manifest.json")
+        link(rel="icon" type='image/png' sizes="192x192" href="static/images/favicon/android-icon-192_192.png")
+        <!-- Windows -->
+        meta(name="msapplication-TileColor", content="#333333")
+        meta(name="msapplication-TileImage", content="static/images/favicon/ms-icon-144_144.png")
+        meta(name="msapplication-config", content="static/images/favicon/browserconfig.xml")
+        meta(name="theme-color", content="#F1811A")
+        <!-- Mac OS -->
+        link(rel="mask-icon" color="#00759F" href="static/images/favicon/safari-pinned-tab.svg")
+        <!-- OG-метки -->
+        meta(property="og:title", content="Texno Kit")
+        meta(property="og:description", content="ТОВ \"К-ИТ\" — это команда профессионалов с многолетним стажем работы в индустрии IT. С 2010 года мы создаем высокотехнологичные решения в любых отраслях бизнеса.")
+        meta(property="og:type", content="article")
+        meta(property="og:image", content="static/images/common/header_bg.png")
+        meta(property="og:site_name", content="Texno Kit")
+        <!-- Файлы стилей -->
         link(rel="stylesheet" type='text/css' href="static/css/styles.css")
     body
         include ../modules/header/header
