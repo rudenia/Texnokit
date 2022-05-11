@@ -1,5 +1,5 @@
 .about {
-  padding: 145px 0 73px;
+  padding: 90px 0 73px;
   &__main {
     display: flex;
     &-title {
@@ -13,7 +13,7 @@
       font-weight: 600;
       line-height: 34.5px;
       max-width: 730px;
-      margin-bottom: 40px;
+      margin-bottom: 42px;
     }
   }
   &__privilege {
@@ -27,13 +27,13 @@
       font-weight: 600;
       font-size: 23px;
       line-height: 150%;
-      margin-bottom: 30px;
+      margin-bottom: 29px;
     }
   }
   &__list {
     &__item {
       display: flex;
-      padding: 20px 0;
+      padding: 20px 0 19px;
       border-top: 2px solid $silverChalice;
       &-last {
         border-bottom: 2px solid $silverChalice;
@@ -63,12 +63,13 @@
       color: $allports;
     }
     &__icon {
-      width: 16px;
+      width: 20px;
       height: 24px;
       fill: $silverChalice;
-      margin-right: 11px;
+      margin-right: 10px;
       transition: all .6s ease;
     }
   }
 }
+
 

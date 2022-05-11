@@ -1,13 +1,14 @@
 .header__contacts {
   display: flex;
   background-color: $mineShaft;
-  padding: 12px 0  16px;
+  padding: 12px 0  18px;
   &__wrapper {
     display: flex;
     justify-content: end;
     align-items: center;
     & > * {
       margin-right: 30px;
+      padding-top: 3px;
       &:last-child { margin-right: 0; }
     }
   }
@@ -24,13 +25,14 @@
     }
   }
   &__language {
-    color: $white;
+    color: $silverChalice;
+    transition: all .6s ease;
     & > * {
       margin-right: 10px;
       &:last-child { margin-right: 0; }
     }
     &:hover {
-      color: $white;
+      color: $cerulean;
     }
   }
   &__social {
@@ -42,6 +44,10 @@
     &__icon {
       fill: $silver;
       @include size(24px);
+      transition: all .6s ease;
+      &:hover {
+        fill: $cerulean;
+      }
     }
   }
 }

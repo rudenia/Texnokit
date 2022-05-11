@@ -9,18 +9,19 @@
   &__title {
     font-size: 56px;
     font-weight: 700;
+    letter-spacing: 1.78px;
     color: $allports;
-    max-width: 490px;
+    max-width: 496px;
     line-height: 83px;
-    margin-bottom: 13px;
+    margin-bottom: 9px;
   }
   &__description {
     font-size: 28px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
   &__menu {
-    padding-left: 20px;
+    padding-left: 17px;
     border-left: 2px solid $silverChalice;
     &-item {
       & > * {

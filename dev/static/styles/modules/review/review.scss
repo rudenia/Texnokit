@@ -1,5 +1,5 @@
 .review {
-  padding: 51px 0 171px;
+  padding: 13px 0 171px;
   &__main {
     display: flex;
     justify-content: space-between;
@@ -12,6 +12,7 @@
     max-width: 825px;
     display: flex;
     min-width: 0;
+    margin-top: 2px;
     & > * {
       margin-right: 30px;
       &:last-child { margin-right: 0; }
@@ -19,6 +20,7 @@
     &-description {
       max-width: 350px;
       border-bottom: 2px solid $silverChalice;
+      letter-spacing: 0.09px;
     }
     &-about {
       background-color: $allports;
@@ -37,12 +39,11 @@
     & .slick-arrow {
       position: absolute;
       cursor: pointer;
-      bottom: -3%;
       font-size: 0;
       width: 31px;
       height: 16px;
       border: 0;
-      bottom: -20%;
+      bottom: -11%;
     }
   }
 }

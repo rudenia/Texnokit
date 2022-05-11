@@ -1,5 +1,5 @@
 .contacts {
-  padding: 138px 0 150px;
+  padding: 121px 0 136px;
   &__main {
     display: flex;
     justify-content: space-between;
@@ -16,7 +16,7 @@
         margin-bottom: 0; }
     }
     &-item {
-      margin-bottom: 20px;
+      margin-bottom: 17px;
       display: flex;
       flex-direction: column;
     }
@@ -24,7 +24,7 @@
       color: $mineShaft;
       font-size: 23px;
       font-weight: 600;
-      line-height: 28px;
+      line-height: 33px;
     }
   }
 }
