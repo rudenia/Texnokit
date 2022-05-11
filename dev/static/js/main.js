@@ -116,3 +116,21 @@ $(document).ready(function() {
         }
     });
 });
+
+//E-mail Ajax Send
+$("#form").submit(function() { //Change
+    var th = $(this);
+    $.ajax({
+        type: "POST",
+        url: "mail.php", //Change
+        data: th.serialize()
+    }).done(function() {
+        // alert('cgcb,jj');
+        // $.magnificPopup.close(); /*-close form after */
+        setTimeout(function () {
+
+            // Done Functions
+        }, 2000);
+    });
+    return false;
+});

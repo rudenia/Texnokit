@@ -1,0 +1,15 @@
+.request__main
+    p.request__main-description Оставить заявку
+    form(action="#").form#form
+        input(type="hidden", name="project_name" value="TexnoKit").form__input
+        input(type="hidden", name="admin_email" value="admin@mail.com").form__input
+        input(type="hidden", name="form_subject" value="Новая заявка").form__input
+        h3.form__title Оставьте заявку и мы свяжемся с вами в ближайшее время
+        input(type="text", name="name" required, placeholder="Имя").form__input
+        .form__item
+            input(type="text", name="email" required, placeholder="Почта", pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})").form__input
+            input(type="text", name="phone" required, placeholder="Номер телефона").form__input
+        textarea(name="comment", placeholder="Комментарий").form__input.form__message
+        .form__button
+            +icon('arrow', 'form__button-icon')
+            button(name="submit").form__button-submit Отправить
