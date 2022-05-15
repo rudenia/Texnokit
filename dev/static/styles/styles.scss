@@ -89,6 +89,9 @@ button { outline: none; }
   margin: 0 auto;
   max-width: $content;
   width: 100%;
+  @media (max-width: 1200px) {
+    width: 960px;
+  }
 }
 
 //Модули

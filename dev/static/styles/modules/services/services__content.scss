@@ -2,6 +2,9 @@
   max-width: 825px;
   margin-left: auto;
   display: none;
+  @media (max-width: 1200px) {
+    max-width: 680px;
+  }
   &-text {
     margin-bottom: 10px;
     line-height: 19.2px;

@@ -1,9 +1,15 @@
 .about {
   padding: 90px 0 73px;
+  @media (max-width: 1200px) {
+    padding-top: 98px;
+  }
   &__main {
     display: flex;
     &-title {
       margin-right: 220px;
+      @media (max-width: 1200px) {
+        margin-right: 70px;
+      }
     }
     &__content {
       max-width: 825px;
@@ -14,6 +20,9 @@
       line-height: 34.5px;
       max-width: 730px;
       margin-bottom: 42px;
+      @media (max-width: 1200px) {
+        max-width: 100%;
+      }
     }
   }
   &__privilege {
