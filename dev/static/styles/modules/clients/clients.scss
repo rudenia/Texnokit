@@ -32,6 +32,9 @@
     &-img {
       margin-bottom: 23px;
       width: 300px;
+      @media (max-width: 992px) {
+        width: 345px;
+      }
     }
   }
 }

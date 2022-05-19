@@ -2,17 +2,31 @@
   background-color: $mineShaft;
   padding: 20px 0;
   border-top: 2px solid $silverChalice;
+  @media (max-width: 768px) {
+    position: relative;
+  }
   &-wrapper {
     display: flex;
     align-items: center;
   }
   &__menu {
     padding-left: 32px;
+    @media (max-width: 768px) {
+      padding-left: 0;
+      position: absolute;
+      background-color: $mineShaft;
+      top: 79px;
+      right: 0;
+      border-top: 2px solid $silverChalice;
+    }
     &__list {
       display: flex;
       & > * {
         margin-right: 42px;
         &:last-child { margin-right: 0; }
+        @media (max-width: 992px) {
+          margin-right: 20px;
+        }
       }
       & a {
         color: $white;
@@ -20,6 +34,19 @@
         &:hover {
           color: $allports;
           font-size: 15px;
+        }
+        @media (max-width: 992px) {
+          font-size: 14px;
+        }
+      }
+      @media (max-width: 768px) {
+        flex-direction: column;
+        width: 203px;
+        & > * {
+          padding: 15px 0 15px 17px;
+          border-bottom: 1px solid $silverChalice;
+          width: 164px;
+          &:last-child { border-bottom: 0; }
         }
       }
     }

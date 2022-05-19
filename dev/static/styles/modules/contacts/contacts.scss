@@ -3,6 +3,9 @@
   &__main {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
   }
   &__info {
     display: flex;
@@ -10,6 +13,9 @@
   &__general {
     padding-top: 20px;
     margin-right: 53px;
+    @media (max-width: 992px) {
+      margin-right: 28px;
+    }
     & > * {
       margin-bottom: 20px;
       &:last-child {

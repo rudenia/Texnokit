@@ -3,12 +3,21 @@
   @media (max-width: 1200px) {
     padding-top: 98px;
   }
+  @media (max-width: 992px) {
+    padding-top: 30px;
+  }
   &__main {
     display: flex;
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
     &-title {
       margin-right: 220px;
       @media (max-width: 1200px) {
         margin-right: 70px;
+      }
+      @media (max-width: 992px) {
+        margin-bottom: 30px;
       }
     }
     &__content {
@@ -22,6 +31,9 @@
       margin-bottom: 42px;
       @media (max-width: 1200px) {
         max-width: 100%;
+      }
+      @media (max-width: 992px) {
+
       }
     }
   }

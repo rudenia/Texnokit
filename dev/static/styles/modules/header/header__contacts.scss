@@ -11,6 +11,9 @@
       padding-top: 3px;
       &:last-child { margin-right: 0; }
     }
+    @media (max-width: 992px) {
+      justify-content: space-between;
+    }
   }
   &__tel {
     & > * {

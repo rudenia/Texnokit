@@ -1,0 +1,30 @@
+.header__burger {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    & span {
+      background-color: $silverChalice;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      top: 9px;
+    }
+    &:before, &:after {
+      content: '';
+      background-color: $silverChalice;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      left: 0;
+    }
+    &:before {
+      top: 0;
+    }
+    &:after {
+      bottom: 0;
+    }
+  }
+}
