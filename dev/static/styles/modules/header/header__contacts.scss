@@ -2,6 +2,9 @@
   display: flex;
   background-color: $mineShaft;
   padding: 12px 0  18px;
+  @media (max-width: 576px) {
+    padding-bottom: 0;
+  }
   &__wrapper {
     display: flex;
     justify-content: end;
@@ -13,6 +16,9 @@
       margin-right: 30px;
       padding-top: 3px;
       &:last-child { margin-right: 0; }
+      @media (max-width: 576px) {
+        margin: 0 0 15px;
+      }
     }
     @media (max-width: 992px) {
       justify-content: space-between;
@@ -32,11 +38,21 @@
     @media (max-width: 768px) {
       display: none;
     }
+    @media (max-width: 576px) {
+      display: block;
+      order: 3;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
     &-main {
       @media (max-width: 768px) {
         display: flex;
         flex-direction: column;
         order: 2;
+      }
+      @media (max-width: 576px) {
+        display: none;
       }
       display: block;
     }
@@ -53,6 +69,9 @@
     }
     @media (max-width: 768px) {
       order: 2;
+    }
+    @media (max-width: 576px) {
+      order: 1;
     }
   }
   &__social {
@@ -71,6 +90,9 @@
     }
     @media (max-width: 768px) {
       order: 1;
+    }
+    @media (max-width: 576px) {
+      order: 2;
     }
   }
 }

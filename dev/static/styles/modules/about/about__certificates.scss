@@ -9,12 +9,19 @@
   }
   &__certificates {
     display: flex;
+    @media (max-width: 576px) {
+      flex-wrap: wrap;
+    }
     & > * {
       margin-right: 30px;
       width: 65px;
       height: 92px;
       cursor: pointer;
       &:last-child { margin-right: 0; }
+      @media (max-width: 576px) {
+        margin-right: 17px;
+        margin-bottom: 20px;
+      }
     }
   }
 }

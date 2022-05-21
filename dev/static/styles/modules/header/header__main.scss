@@ -13,6 +13,9 @@
   &__logo {
     order: 1;
     margin-right: 58px;
+    @media (max-width: 576px) {
+      width: 67px;
+    }
   }
   &__menu {
     padding-left: 32px;
@@ -20,13 +23,18 @@
       padding-left: 0;
       position: absolute;
       background-color: $mineShaft;
-      top: -613%;
+      top: -1000%;
       right: 0;
       border-top: 2px solid $silverChalice;
       transition: all .6s ease;
       overflow: auto;
       &.active {
         top: 88px;
+      }
+    }
+    @media (max-width: 576px) {
+      &.active {
+        top: 77px;
       }
     }
     &__list {
@@ -77,6 +85,16 @@
       @media (max-width: 768px) {
         display: block;
         order: 3;
+      }
+      @media (max-width: 576px) {
+        display: none;
+      }
+      &-mobile {
+        display: none;
+        @media (max-width: 576px) {
+          display: block;
+          order: 4;
+        }
       }
     }
   }

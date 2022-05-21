@@ -56,4 +56,11 @@ iframe {
   @media (max-width: 768px) {
     max-width: 540px;
   }
+  @media (max-width: 576px) {
+    width: 360px;
+  }
+  @media (max-width: 399px) {
+    width: 288px;
+    height: 220px;
+  }
 }

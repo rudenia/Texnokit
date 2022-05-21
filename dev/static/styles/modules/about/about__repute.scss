@@ -1,6 +1,9 @@
 .about__repute {
   display: flex;
   padding-top: 30px;
+  @media (max-width: 576px) {
+    flex-direction: column-reverse;
+  }
   &__block {
     padding-bottom: 29px;
     border-bottom: 2px solid $silverChalice;
@@ -29,6 +32,10 @@
     @media (max-width: 768px) {
       padding: 57px 56px;
       font-size: 18px;
+    }
+    @media (max-width: 576px) {
+      font-size: 19px;
+      padding: 36px 20px;
     }
   }
   &__change {

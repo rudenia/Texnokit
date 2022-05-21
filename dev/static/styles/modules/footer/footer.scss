@@ -2,6 +2,9 @@
   padding: 69px 0 42px;
   background-color: $allports;
   color: $white;
+  @media (max-width: 576px) {
+    padding-bottom: 17px;
+  }
   &__main {
     display: flex;
     @media (max-width: 768px) {
@@ -25,6 +28,9 @@
     @media (max-width: 768px) {
       margin-left: 0;
     }
+    @media (max-width: 576px) {
+     flex-direction: column;
+    }
   }
   &__menu {
     border-left: 2px solid $white;
@@ -37,6 +43,9 @@
     & a {
       color: $white;
       font-weight: 600;
+    }
+    @media (max-width: 576px) {
+      margin-bottom: 40px;
     }
   }
   &__contacts {
@@ -69,6 +78,9 @@
     line-height: 14.52px;
     @media (max-width: 768px) {
       margin-left: 0;
+    }
+    @media (max-width: 576px) {
+      margin-top: 45px;
     }
   }
 }

@@ -16,9 +16,15 @@
   &__info {
     display: flex;
     margin-top: 7px;
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
     & > * {
       margin-right: 30px;
       &:last-child { margin-right: 0; }
+      @media (max-width: 576px) {
+        margin-right: 0;
+      }
     }
     &-about {
       background-color: $allports;
@@ -33,6 +39,9 @@
       }
       @media (max-width: 768px) {
         padding: 37px 33px;
+      }
+      @media (max-width: 576px) {
+        margin-bottom: 30px;
       }
       & > * {
         font-weight: 900;
