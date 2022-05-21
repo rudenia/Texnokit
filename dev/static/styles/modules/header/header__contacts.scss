@@ -6,6 +6,9 @@
     display: flex;
     justify-content: end;
     align-items: center;
+    @media (max-width: 768px) {
+      flex-flow: row wrap;
+    }
     & > * {
       margin-right: 30px;
       padding-top: 3px;
@@ -26,6 +29,17 @@
         color: $white;
       }
     }
+    @media (max-width: 768px) {
+      display: none;
+    }
+    &-main {
+      @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        order: 2;
+      }
+      display: block;
+    }
   }
   &__language {
     color: $silverChalice;
@@ -36,6 +50,9 @@
     }
     &:hover {
       color: $cerulean;
+    }
+    @media (max-width: 768px) {
+      order: 2;
     }
   }
   &__social {
@@ -51,6 +68,9 @@
       &:hover {
         fill: $cerulean;
       }
+    }
+    @media (max-width: 768px) {
+      order: 1;
     }
   }
 }

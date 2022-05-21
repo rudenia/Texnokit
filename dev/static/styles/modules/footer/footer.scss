@@ -4,10 +4,17 @@
   color: $white;
   &__main {
     display: flex;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
     &-logo {
       width: 190px;
       margin-top: 61px;
       margin-right: 95px;
+      @media (max-width: 768px) {
+        align-items: center;
+        margin: 0 0 35px;
+      }
     }
   }
   &__info {
@@ -15,6 +22,9 @@
     justify-content: space-between;
     width: 100%;
     margin-left: 73px;
+    @media (max-width: 768px) {
+      margin-left: 0;
+    }
   }
   &__menu {
     border-left: 2px solid $white;
@@ -57,5 +67,8 @@
     margin-left: 122px;
     text-align: center;
     line-height: 14.52px;
+    @media (max-width: 768px) {
+      margin-left: 0;
+    }
   }
 }

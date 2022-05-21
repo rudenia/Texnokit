@@ -7,6 +7,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    &-title {
+      @media (max-width: 992px) {
+        margin-bottom: 30px;
+      }
+    }
   }
   &__info {
     display: flex;
@@ -26,6 +31,9 @@
       @media (max-width: 992px) {
         padding: 53px 33px;
       }
+      @media (max-width: 768px) {
+        padding: 37px 33px;
+      }
       & > * {
         font-weight: 900;
         &:first-child { font-weight: 600; }
@@ -39,6 +47,9 @@
         line-height: 19px;
         &:last-child {
           margin-bottom: 0; }
+        @media (max-width: 768px) {
+          margin-bottom: 10px;
+        }
       }
     }
   }

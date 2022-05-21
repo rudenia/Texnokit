@@ -19,11 +19,18 @@
 .form {
   margin-left: 154px;
   margin-top: 8px;
+  @media (max-width: 768px) {
+    margin: 0 auto;
+    text-align: center;
+  }
   &__title {
     line-height: 150%;
     color: $white;
     max-width: 374px;
     margin-bottom: 44px;
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
   }
   &__input {
     max-width: 3350px;
@@ -49,6 +56,9 @@
     & > * {
       margin-right: 25px;
       &:last-child { margin-right: 0; }
+      @media (max-width: 768px) {
+        margin-right: 0;
+      }
     }
   }
   &__message {
@@ -86,6 +96,10 @@
     }
     &:hover svg {
       color: $white;
+    }
+    @media (max-width: 768px) {
+      text-align: left;
+      margin-left: 45px;
     }
   }
 }

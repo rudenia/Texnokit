@@ -56,6 +56,9 @@
     &-list {
       max-width: 825px;
       width: 825px;
+      @media (max-width: 768px) {
+        width: 540px;
+      }
     }
   }
   &-list {

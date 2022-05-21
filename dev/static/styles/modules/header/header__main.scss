@@ -8,6 +8,11 @@
   &-wrapper {
     display: flex;
     align-items: center;
+    flex-flow: row wrap;
+  }
+  &__logo {
+    order: 1;
+    margin-right: 58px;
   }
   &__menu {
     padding-left: 32px;
@@ -15,9 +20,14 @@
       padding-left: 0;
       position: absolute;
       background-color: $mineShaft;
-      top: 79px;
+      top: -613%;
       right: 0;
       border-top: 2px solid $silverChalice;
+      transition: all .6s ease;
+      overflow: auto;
+      &.active {
+        top: 88px;
+      }
     }
     &__list {
       display: flex;
@@ -58,6 +68,16 @@
     margin-left: auto;
     &__description {
       padding: 0 14px 0 15px;
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+    &-contacts {
+      display: none;
+      @media (max-width: 768px) {
+        display: block;
+        order: 3;
+      }
     }
   }
 }

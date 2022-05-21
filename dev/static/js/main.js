@@ -77,6 +77,14 @@ $(document).ready(function (){
                     rows: 1
                 }
             },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    rows: 1,
+                }
+            }
             // {
             //     breakpoint: 480,
             //     settings: {
@@ -110,6 +118,14 @@ $(document).ready(function (){
                     rows: 1
                 }
             },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    rows: 1,
+                }
+            }
             // {
             //     breakpoint: 480,
             //     settings: {
@@ -141,6 +157,13 @@ $(document).ready(function (){
                     rows: 1
                 }
             },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            }
             // {
             //     breakpoint: 480,
             //     settings: {
@@ -193,3 +216,10 @@ $("#form").submit(function() { //Change
     });
     return false;
 });
+
+// hamburger
+
+$('.header__burger').click(function (event) {
+    $('.header__burger,.header__main__menu').toggleClass('active');
+    $('body').toggleClass('lock');
+})

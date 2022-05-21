@@ -26,12 +26,19 @@
     font-weight: 600;
     text-transform: uppercase;
     transition: all .6s ease;
-
+    @media (max-width: 768px) {
+      padding: 57px 56px;
+      font-size: 18px;
+    }
   }
   &__change {
     width: 350px;
     height: 246px;
     margin-left: auto;
     padding: 24px 13px 12px 53px;
+    transition: all .6s ease;
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }
