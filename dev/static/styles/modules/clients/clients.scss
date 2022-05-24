@@ -31,7 +31,9 @@
     }
     &-img {
       margin-bottom: 23px;
-      width: 300px;
+      @media (max-width: 1200px) {
+        width: 300px;
+      }
       @media (max-width: 992px) {
         width: 345px;
       }
@@ -39,7 +41,7 @@
         width: 255px;
       }
       @media (max-width: 576px) {
-        width: 360px;
+        width: 300px;
       }
     }
   }

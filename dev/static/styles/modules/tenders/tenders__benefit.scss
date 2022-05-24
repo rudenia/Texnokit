@@ -25,7 +25,9 @@
         padding-top: 40px;
         border-bottom: 0;
       }
-
+      @media (max-width: 576px) {
+        &:first-child { padding-bottom: 90px; }
+        }
     }
   }
   &-link {

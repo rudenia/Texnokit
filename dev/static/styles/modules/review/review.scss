@@ -74,7 +74,12 @@
       bottom: -11%;
     }
     &-img {
-      width: 360px;
+      @media (max-width: 576px) {
+        width: 360px;
+      }
+      @media (max-width: 400px) {
+        width: 295px;
+      }
     }
   }
 }

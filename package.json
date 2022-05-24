@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fancyapps/ui": "^4.0.27",
+    "fancybox": "^3.0.1",
     "magnific-popup": "^1.1.0",
     "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1"
