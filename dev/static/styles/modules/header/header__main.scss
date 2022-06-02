@@ -51,7 +51,6 @@
         transition: all .6s ease;
         &:hover {
           color: $allports;
-          font-size: 15px;
         }
         @media (max-width: 992px) {
           font-size: 14px;

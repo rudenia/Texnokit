@@ -1,10 +1,10 @@
 .request__main
     p.request__main-description Оставить заявку
-    form(action="#").form#form
+    form(action="mail.php").form#form
         input(type="hidden", name="project_name" value="TexnoKit").form__input
         input(type="hidden", name="admin_email" value="viewerr@gmail.com").form__input
         input(type="hidden", name="form_subject" value="Новая заявка").form__input
-        h3.form__title Оставьте заявку и мы свяжемся с вами в ближайшее время
+        h3.form__title_anim-items._anim-show._anim-no-hide Оставьте заявку и мы свяжемся с вами в ближайшее время
         input(type="text", name="name" required, placeholder="Имя").form__input
         .form__item
             input(type="text", name="email" required, placeholder="Почта", pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})").form__input

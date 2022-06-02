@@ -1,0 +1,17 @@
+/* fix menu*/
+
+.fixed {
+  position: fixed;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  padding: 12px 0;
+  display: block;
+  z-index: 99999999;
+  background: #333;
+  opacity: 80%;
+}
+
+.fixed ul {
+  margin-left: 25%;
+}

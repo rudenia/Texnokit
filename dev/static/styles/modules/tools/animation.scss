@@ -1,0 +1,16 @@
+/* Animation*/
+
+._anim-show {
+  opacity: 0; /*Элемент полностью прозрачный (невидимый)*/
+  transform: translate(0px, 140%);
+  transition: all 2s ease 1s;
+}
+
+._anim-show._active,
+._active ._anim-show {
+  opacity: 1;
+  transition: 0.6s; /*Скорость перехода состояния элемента*/
+  animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+  animation-delay: 2s; /* Задержка перед началом */
+  transform: translate(0px, 0px);
+}

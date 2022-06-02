@@ -77,7 +77,7 @@ function vendors() {
 
 function imageMin() {
     return gulp.src(
-        ['dev/static/images/**/*.{jpg,png,gif,svg,ico,json,xml}'],
+        ['dev/static/images/**/*.{jpg,png,gif,svg,ico,json,xml,webp}'],
         ['!dev/static/images/sprite/*'])
         .pipe(gulpIf(isBuildFlag, gulpImagemin([
             gulpImagemin.gifsicle({interlaced: true}),
